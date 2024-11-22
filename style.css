@@ -30,6 +30,7 @@
     text-align: center;
     background: #333;
     padding: 10px 0;
+    border-radius: 25px;
   }
   
   nav ul li {
@@ -45,9 +46,60 @@
   main {
     margin: 20px 0;
   }
+
+  main ul li {
+    list-style-type: square;
+    padding: 5px;
+    margin-left: 20px;
+  }
   
   section {
     margin: 20px 0;
+  }
+
+  .proj {
+    color: grey;
+  }
+
+  .skills-container{
+    display:flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .skills-column {
+    flex: 1; /* Equal width for both columns */
+    max-width: 50%; /* Prevent columns from being too wide */
+    min-width: 300px; /* Set a minimum width for columns */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+}
+
+  .skills-column h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+  }
+
+  .skills-column ul {
+    list-style-type: square;
+    padding: 10px;
+    margin-left: 20px;
+  }
+
+  .skills-column ul li {
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
   }
   
   .projects-grid {
